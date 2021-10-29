@@ -13,9 +13,13 @@
 		99356059272C08C700558322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99356057272C08C700558322 /* Main.storyboard */; };
 		9935605B272C08CA00558322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9935605A272C08CA00558322 /* Assets.xcassets */; };
 		9935605E272C08CA00558322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9935605C272C08CA00558322 /* LaunchScreen.storyboard */; };
+		99356066272C0BBD00558322 /* baemin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 99356065272C0BBD00558322 /* baemin.gif */; };
+		E28700240DA95B5FDB307AAC /* Pods_GIFinButton_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026645C2745B5F4A9BBCFB15 /* Pods_GIFinButton_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026645C2745B5F4A9BBCFB15 /* Pods_GIFinButton_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFinButton_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E91BB0D3F1F255FE752C3CF /* Pods-GIFinButton_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinButton_Demo.debug.xcconfig"; path = "Target Support Files/Pods-GIFinButton_Demo/Pods-GIFinButton_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		9935604E272C08C700558322 /* GIFinButton_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFinButton_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99356051272C08C700558322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99356053272C08C700558322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,9 @@
 		9935605A272C08CA00558322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9935605D272C08CA00558322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9935605F272C08CA00558322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99356065272C0BBD00558322 /* baemin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = baemin.gif; sourceTree = "<group>"; };
+		99356067272C15AB00558322 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ADF5E6EFC6760F2304210D92 /* Pods-GIFinButton_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinButton_Demo.release.xcconfig"; path = "Target Support Files/Pods-GIFinButton_Demo/Pods-GIFinButton_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28700240DA95B5FDB307AAC /* Pods_GIFinButton_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2993EA10FEFB4A2AB9FD9D20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E91BB0D3F1F255FE752C3CF /* Pods-GIFinButton_Demo.debug.xcconfig */,
+				ADF5E6EFC6760F2304210D92 /* Pods-GIFinButton_Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2FE78675B55D2B118B030D8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				026645C2745B5F4A9BBCFB15 /* Pods_GIFinButton_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99356045272C08C700558322 = {
 			isa = PBXGroup;
 			children = (
 				99356050272C08C700558322 /* GIFinButton_Demo */,
 				9935604F272C08C700558322 /* Products */,
+				2993EA10FEFB4A2AB9FD9D20 /* Pods */,
+				2FE78675B55D2B118B030D8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,8 @@
 				9935605A272C08CA00558322 /* Assets.xcassets */,
 				9935605C272C08CA00558322 /* LaunchScreen.storyboard */,
 				9935605F272C08CA00558322 /* Info.plist */,
+				99356065272C0BBD00558322 /* baemin.gif */,
+				99356067272C15AB00558322 /* README.md */,
 			);
 			path = GIFinButton_Demo;
 			sourceTree = "<group>";
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99356062272C08CA00558322 /* Build configuration list for PBXNativeTarget "GIFinButton_Demo" */;
 			buildPhases = (
+				77076BD26DBCEBE6E3EB0A85 /* [CP] Check Pods Manifest.lock */,
 				9935604A272C08C700558322 /* Sources */,
 				9935604B272C08C700558322 /* Frameworks */,
 				9935604C272C08C700558322 /* Resources */,
+				8868939D8FA3FB3B36BADF06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +157,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9935605E272C08CA00558322 /* LaunchScreen.storyboard in Resources */,
+				99356066272C0BBD00558322 /* baemin.gif in Resources */,
 				9935605B272C08CA00558322 /* Assets.xcassets in Resources */,
 				99356059272C08C700558322 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77076BD26DBCEBE6E3EB0A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIFinButton_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8868939D8FA3FB3B36BADF06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFinButton_Demo/Pods-GIFinButton_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFinButton_Demo/Pods-GIFinButton_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIFinButton_Demo/Pods-GIFinButton_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9935604A272C08C700558322 /* Sources */ = {
@@ -284,6 +358,7 @@
 		};
 		99356063272C08CA00558322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E91BB0D3F1F255FE752C3CF /* Pods-GIFinButton_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +387,7 @@
 		};
 		99356064272C08CA00558322 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF5E6EFC6760F2304210D92 /* Pods-GIFinButton_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

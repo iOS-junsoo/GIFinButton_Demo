@@ -6,14 +6,26 @@
 //
 
 import UIKit
+import Gifu
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var gifImageView: GIFImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        gifImageView.animate(withGIFNamed: "baemin") {
+            print("It's animating!")
+        }
     }
 
-
+    @IBAction func toggleAnimation(_ sender: UIButton) {
+        if gifImageView.isAnimatingGIF {
+              gifImageView.stopAnimatingGIF()
+          } else {
+              gifImageView.startAnimatingGIF()
+          }
+    }
+    
 }
 
